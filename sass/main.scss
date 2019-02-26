@@ -1,0 +1,116 @@
+@import "base";
+.landing-header {
+    background-color: rgb(1, 1, 75);
+    height: 10vh;
+}
+
+.header-item {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    & .header-items-nav {
+        margin-left: 2rem;
+        & .header-items-link {
+            text-decoration: none;
+            color: rgb(155, 155, 4);
+            transition: .3s all;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 75vh;
+    background-color: rgb(77, 182, 248);
+    & .about-text {
+        display: flex;
+        font-size: 1.3rem;
+        flex-direction: column;
+        text-align: center;
+        & .about-text-link {
+            background-color: white;
+            padding: 1rem 0;
+            border-radius: .5rem;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: rgb(33, 33, 37);
+            & .link-slack-icon {
+                height: 2.3rem;
+                padding-left: 2rem;
+            }
+            & .link-text {
+                margin: .6rem 0 0 1.2rem;
+            }
+            &:hover {
+                & .link-slack-icon {
+                    transform: scale(1.4) rotate(17deg);
+                    transition: .6s all;
+                }
+            }
+        }
+        >* {
+            margin-bottom: 1.5rem;
+        }
+        & .about-text-minor {
+            color: white;
+        }
+    }
+}
+
+.stories-section {
+    height: 70vh;
+    padding: 2rem 3rem;
+    & .stories-title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    & .stories-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 1.4rem;
+        >* {
+            padding: 1.5rem;
+        }
+    }
+    & .stories-1 {
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+.how-it-works {
+    height: 80vh;
+    background-color: rgb(146, 226, 253);
+    padding: 1.8rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    & .steps-heading {}
+    & .steps {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: auto auto auto;
+        & .step {
+            text-align: center;
+            >* {
+                padding: 1rem;
+            }
+            & .steps-info {
+                background-color: white;
+            }
+            & .img-container {
+                background-color: rgb(1, 1, 75);
+                & .steps-img {
+                    height: 15rem;
+                }
+            }
+        }
+    }
+}

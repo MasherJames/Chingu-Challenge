@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box; }
+
+.landing-header {
+  background-color: #01014b;
+  height: 10vh; }
+
+.header-item {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.2rem;
+  padding-top: 1.2rem; }
+  .header-item .header-items-nav {
+    margin-left: 2rem; }
+    .header-item .header-items-nav .header-items-link {
+      text-decoration: none;
+      color: #9b9b04;
+      transition: .3s all; }
+      .header-item .header-items-nav .header-items-link:hover {
+        color: white; }
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 75vh;
+  background-color: #4db6f8; }
+  .about-section .about-text {
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: column;
+    text-align: center; }
+    .about-section .about-text .about-text-link {
+      background-color: white;
+      padding: 1rem 0;
+      border-radius: .5rem;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: #212125; }
+      .about-section .about-text .about-text-link .link-slack-icon {
+        height: 2.3rem;
+        padding-left: 2rem; }
+      .about-section .about-text .about-text-link .link-text {
+        margin: .6rem 0 0 1.2rem; }
+      .about-section .about-text .about-text-link:hover .link-slack-icon {
+        transform: scale(1.4) rotate(17deg);
+        transition: .6s all; }
+    .about-section .about-text > * {
+      margin-bottom: 1.5rem; }
+    .about-section .about-text .about-text-minor {
+      color: white; }
+
+.stories-section {
+  height: 70vh;
+  padding: 2rem 3rem; }
+  .stories-section .stories-title {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .stories-section .stories-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 1.4rem; }
+    .stories-section .stories-2 > * {
+      padding: 1.5rem; }
+  .stories-section .stories-1 {
+    padding: 1.5rem;
+    font-size: 1.4rem; }
+
+.how-it-works {
+  height: 80vh;
+  background-color: #92e2fd;
+  padding: 1.8rem;
+  display: grid;
+  grid-template-rows: auto auto; }
+  .how-it-works .steps {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto; }
+    .how-it-works .steps .step {
+      text-align: center; }
+      .how-it-works .steps .step > * {
+        padding: 1rem; }
+      .how-it-works .steps .step .steps-info {
+        background-color: white; }
+      .how-it-works .steps .step .img-container {
+        background-color: #01014b; }
+        .how-it-works .steps .step .img-container .steps-img {
+          height: 15rem; }

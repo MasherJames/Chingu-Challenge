@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-const performDataFetching = url => {
-  const [fetchedData, setFetchedData] = useState({ bookes: [] });
+const performDataFetching = (initialurl, initialData) => {
+  const [url, setUrl] = useState(initialurl);
+  const [fetchedData, setFetchedData] = useState(initialData);
   const [isFetching, setIsFetching] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -16,15 +17,21 @@ const performDataFetching = url => {
         return response.json();
       })
       .then(data => {
-        setIsloading(false);
+        setIsFetching(false);
         setFetchedData(data);
       })
       .catch(error => {
         setIsError(true);
-        setIsloading(false);
+        setIsFetching(false);
       });
   }, [url]);
-  return [fetchedData, isFetching, isError];
+
+  const fetchBooks = (e, url) => {
+    e.preventDefault();
+    setUrl(url);
+  };
+
+  return [fetchedData, isFetching, isError, fetchBooks];
 };
 
 export default performDataFetching;

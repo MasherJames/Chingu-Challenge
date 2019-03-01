@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { AppContext } from "./context";
+import Search from "./components/Search";
 import Books from "./components/Books";
 
 const App = props => {
@@ -22,6 +23,7 @@ const App = props => {
       }}
     >
       <div>
+        <Search />
         <Books />
       </div>
     </AppContext.Provider>

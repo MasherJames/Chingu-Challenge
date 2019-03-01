@@ -1,77 +1,17 @@
-import React, {
-  useState,
-  Fragment,
-  useRef,
-  useEffect,
-  useContext
-} from "react";
+import React, { useContext } from "react";
 import { AppContext } from "../context";
-import performDataFetching from "../hooks/hook";
+import Book from "./Book";
 
-const Books = props => {
-  const {
-    query,
-    setQuery,
-    isError,
-    setIsFetching,
-    isFetching,
-    fetchedData
-  } = useContext(AppContext);
-  const fetchBooks = performDataFetching(
-    `https://www.googleapis.com/books/v1/volumes?q=${query}`
-  );
-  const [isEmpty, setIsEmpty] = useState(false);
-  const inputQuery = useRef();
+const Books = () => {
+  const { fetchedData, isFetching } = useContext(AppContext);
+  const books = fetchedData.items || [];
 
-  useEffect(() => {
-    inputQuery.current.focus();
-  });
-
-  const handleClick = event => {
-    setQuery("");
-  };
-
-  const handleChange = event => {
-    setQuery(event.target.value);
-  };
-
-  const handleSubmit = event => {
-    event.preventDefault();
-    if (String(query).length === 0) {
-      setIsEmpty(true);
-    } else {
-      setIsEmpty(false);
-      setIsFetching(true);
-      fetchBooks(
-        event,
-        `https://www.googleapis.com/books/v1/volumes?q=${query}`
-      );
-    }
-  };
+  if (books.length === 0) {
+    return <span>No books found</span>;
+  }
 
   return (
-    <Fragment>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={query}
-          onChange={handleChange}
-          name="query"
-          ref={inputQuery}
-        />
-        {String(query).length > 0 && (
-          <button onClick={handleClick}>&times;</button>
-        )}
-        <button type="submit">Submit</button>
-        {isEmpty && <span>Please enter a search query</span>}
-      </form>
-      {isError && <div>Something is not rigth ...</div>}
-      {isFetching ? (
-        <div>Wait as we fetch the data ...</div>
-      ) : (
-        <ul>{console.log(fetchedData)}</ul>
-      )}
-    </Fragment>
+    <div>{isFetching ? "wait as we get books" : <Book books={books} />}</div>
   );
 };
 

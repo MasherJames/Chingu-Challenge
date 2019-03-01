@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const performDataFetching = (initialurl, initialData) => {
-  const [url, setUrl] = useState(initialurl);
-  const [fetchedData, setFetchedData] = useState(initialData);
+const performDataFetching = initialurl => {
+  const [fetchedData, setFetchedData] = useState({});
   const [isFetching, setIsFetching] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [url, setUrl] = useState(initialurl);
 
   useEffect(() => {
     setIsError(false);
@@ -31,7 +31,7 @@ const performDataFetching = (initialurl, initialData) => {
     setUrl(url);
   };
 
-  return [fetchedData, isFetching, isError, fetchBooks];
+  return fetchBooks;
 };
 
 export default performDataFetching;

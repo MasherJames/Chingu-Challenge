@@ -1,0 +1,507 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Book test renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Book
+    books={
+      Array [
+        Object {
+          "id": "a",
+          "volumeInfo": Object {
+            "authors": "z",
+            "imageLinks": "k",
+            "infolink": "b",
+            "publisher": "l",
+            "title": "y",
+          },
+        },
+        Object {
+          "id": "b",
+          "volumeInfo": Object {
+            "authors": "z",
+            "imageLinks": "k",
+            "infolink": "b",
+            "publisher": "l",
+            "title": "y",
+          },
+        },
+        Object {
+          "id": "c",
+          "volumeInfo": Object {
+            "authors": "z",
+            "imageLinks": "k",
+            "infolink": "b",
+            "publisher": "l",
+            "title": "y",
+          },
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": "a",
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="y"
+        />,
+        <div>
+          Title: 
+          y
+        </div>,
+        <div>
+          publisher: 
+          l
+        </div>,
+        <div>
+          authors: 
+          z
+        </div>,
+        <a
+          href="b"
+        >
+          book info
+        </a>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "y",
+          "src": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Title: ",
+            "y",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Title: ",
+          "y",
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "publisher: ",
+            "l",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "publisher: ",
+          "l",
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "authors: ",
+            "z",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "authors: ",
+          "z",
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "book info",
+          "href": "b",
+        },
+        "ref": null,
+        "rendered": "book info",
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": "a",
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="y"
+          />,
+          <div>
+            Title: 
+            y
+          </div>,
+          <div>
+            publisher: 
+            l
+          </div>,
+          <div>
+            authors: 
+            z
+          </div>,
+          <a
+            href="b"
+          >
+            book info
+          </a>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "y",
+            "src": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Title: ",
+              "y",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Title: ",
+            "y",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "publisher: ",
+              "l",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "publisher: ",
+            "l",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "authors: ",
+              "z",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "authors: ",
+            "z",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "book info",
+            "href": "b",
+          },
+          "ref": null,
+          "rendered": "book info",
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+    Object {
+      "instance": null,
+      "key": "b",
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="y"
+          />,
+          <div>
+            Title: 
+            y
+          </div>,
+          <div>
+            publisher: 
+            l
+          </div>,
+          <div>
+            authors: 
+            z
+          </div>,
+          <a
+            href="b"
+          >
+            book info
+          </a>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "y",
+            "src": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Title: ",
+              "y",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Title: ",
+            "y",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "publisher: ",
+              "l",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "publisher: ",
+            "l",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "authors: ",
+              "z",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "authors: ",
+            "z",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "book info",
+            "href": "b",
+          },
+          "ref": null,
+          "rendered": "book info",
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+    Object {
+      "instance": null,
+      "key": "c",
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="y"
+          />,
+          <div>
+            Title: 
+            y
+          </div>,
+          <div>
+            publisher: 
+            l
+          </div>,
+          <div>
+            authors: 
+            z
+          </div>,
+          <a
+            href="b"
+          >
+            book info
+          </a>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "y",
+            "src": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Title: ",
+              "y",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Title: ",
+            "y",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "publisher: ",
+              "l",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "publisher: ",
+            "l",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "authors: ",
+              "z",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "authors: ",
+            "z",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "book info",
+            "href": "b",
+          },
+          "ref": null,
+          "rendered": "book info",
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

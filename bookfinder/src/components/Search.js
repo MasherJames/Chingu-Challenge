@@ -13,8 +13,6 @@ const Search = props => {
     setQuery,
     isError,
     setIsFetching,
-    isFetching,
-    fetchedData,
     setIsError,
     setFetchedData
   } = useContext(AppContext);
@@ -81,11 +79,6 @@ const Search = props => {
         {isEmpty && <span>Please enter a search query</span>}
       </form>
       {isError && <div>Something is not rigth ...</div>}
-      {isFetching ? (
-        <div>Wait as we fetch the data ...</div>
-      ) : (
-        <ul>{console.log(fetchedData.items)}</ul>
-      )}
     </Fragment>
   );
 };

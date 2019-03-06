@@ -9,7 +9,7 @@ const Book = ({ books }) => {
   const ttle = title => (title ? title : "N/A");
   const inflink = infolink => (infolink ? infolink : "url");
 
-  return books.map((book, indx, books) => {
+  return books.map(book => {
     const {
       id,
       volumeInfo: { imageLinks, publisher, authors, title, infolink }

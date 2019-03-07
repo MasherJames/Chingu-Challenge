@@ -1,9 +1,6 @@
-import EnzymeAdapter from "enzyme-adapter-react-16";
-import Enzyme, { shallow } from "enzyme";
+import { shallow } from "enzyme";
 import Book from "../Book";
 import React from "react";
-
-Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 describe("Book test", () => {
   let defProps = [
@@ -39,8 +36,14 @@ describe("Book test", () => {
     }
   ];
 
-  it("renders correctly", () => {
+  it("renders correctly when it has multiple books", () => {
     const wrapper = shallow(<Book books={defProps} />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it("renders a list of books ", () => {
+    const wrapper = shallow(<Book books={defProps} />);
+    expect(wrapper.find(".book-item")).toBeDefined();
+    expect(wrapper.find(".book-item")).toHaveLength(defProps.length);
   });
 });

@@ -16,7 +16,7 @@ const Book = ({ books }) => {
     } = book;
 
     return (
-      <div key={id}>
+      <div className="book-item" key={id}>
         <img src={imgLink(imageLinks)} alt={ttle(title)} />
         <div>Title: {ttle(title)}</div>
         <div>publisher: {pblisher(publisher)}</div>

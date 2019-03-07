@@ -73,7 +73,7 @@ const Search = props => {
         {String(query).trim().length > 0 && (
           <button onClick={handleClick}>&times;</button>
         )}
-        <button type="submit" disabled={!isVisible}>
+        <button type="submit" className="submit-btn" disabled={!isVisible}>
           Submit
         </button>
         {isEmpty && <span>Please enter a search query</span>}
